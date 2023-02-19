@@ -32,7 +32,7 @@ def test_login_successful():
     assert len(response.json().get('token')) >= 1
 
 
-def test_delete_unsuccessful():
+def test_login_unsuccessful():
     response = requests.post(url=mainUrl + 'login', json={
         "email": "eve.holt@reqres.in"
     })
