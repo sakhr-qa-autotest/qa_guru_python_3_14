@@ -1,7 +1,7 @@
 import requests
 from pytest_voluptuous import S
 
-from schemas.User import user
+from schemas.user import user
 
 mainUrl = 'https://reqres.in/api/'
 testUser = {
